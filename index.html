@@ -5,74 +5,477 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Lasitha Dilshan Thilakarathna | AI Engineer &amp; Full-Stack Developer</title>
+  <meta name="title" content="Lasitha Dilshan Thilakarathna | AI Engineer &amp; Full-Stack Developer" />
+  <meta name="description" content="Lasitha Dilshan Thilakarathna - AI Engineer & Full-Stack Software Engineer with 5 years experience specializing in Generative AI, RAG, Agentic Workflows, Python, FastAPI, Angular, and React." />
+  <meta name="keywords" content="Lasitha Dilshan, Lasitha Thilakarathna, AI Engineer, Generative AI, RAG, Agentic AI, FastAPI, LangChain, Angular, React, Virtusa" />
+  <meta name="author" content="Lasitha Dilshan Thilakarathna" />
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lasithadilshan.github.io/lasitha-thilakarathna" />
+  <meta property="og:title" content="Lasitha Dilshan Thilakarathna | AI Engineer &amp; Full-Stack Developer" />
+  <meta property="og:description" content="AI Engineer & Full-Stack Software Engineer with 5 years of experience delivering enterprise web apps, Generative AI, RAG systems, and Agentic AI workflows." />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://lasithadilshan.github.io/lasitha-thilakarathna" />
+  <meta property="twitter:title" content="Lasitha Dilshan Thilakarathna | AI Engineer &amp; Full-Stack Developer" />
+  <meta property="twitter:description" content="AI Engineer & Full-Stack Software Engineer with 5 years of experience delivering enterprise web apps, Generative AI, RAG systems, and Agentic AI workflows." />
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!-- Performance: Resource Hints for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Application Styles -->
   <link rel="stylesheet" href="css/style.css" />
-  <title>Welcome</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Scripts deferred for non-blocking render -->
+  <script defer src="js/winbox.bundle.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
-<body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li id="about">/about</li>
-        <li id="contact">/contact</li>
-      </ul>
-    </nav>
+<body data-theme="matrix">
+  <!-- Skip to content for Accessibility -->
+  <a href="#terminal-main" class="skip-link">Skip to terminal</a>
 
-    <main>
-      <h1>lasitha:$<span class="cursor">|</span></h1>
-      <h3>Find me online:</h3>
-      <ul>
-        <li>
-          <a href="https://www.youtube.com/c/dilshantilakaratne" target="_blank">YouTube</a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/lasithadilshantilakaratne" target="_blank">Facebook</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/dilshantilakar1" target="_blank">Twitter</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/lasitha-thilakarathna-3027ab120/" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/lasitha_dilshan_/" target="_blank">Instagram</a>
-        </li>
-        <li>
-          <a href="https://github.com/lasithadilshan" target="_blank">Github</a>
-        </li>
-        <li>
-          <a href="https://lasitha-dilshan-thilakarathna.business.site/" target="_blank">Google My Business</a>
-        </li>
-        <li>
-          <a href="https://lasithadilshan.github.io/" target="_blank">My Portfolio</a>
-        </li>
-      </ul>
-    </main>
+  <!-- Ambient Background Glow & CRT Scanline Overlay -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="crt-overlay" id="crt-overlay" aria-hidden="true"></div>
+
+  <div class="terminal-wrapper">
+    <!-- Terminal Outer Window Frame -->
+    <div class="terminal-window" id="terminal-window">
+      
+      <!-- Terminal Header / Titlebar -->
+      <header class="terminal-header">
+        <div class="terminal-controls" aria-label="Window controls">
+          <span class="control-btn close" title="Close window"></span>
+          <span class="control-btn minimize" title="Minimize"></span>
+          <span class="control-btn maximize" title="Maximize"></span>
+        </div>
+
+        <div class="terminal-title">
+          <svg class="terminal-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+          <span>guest@lasitha-terminal:~ (zsh)</span>
+        </div>
+
+        <!-- Terminal Quick Settings -->
+        <div class="terminal-actions">
+          <div class="theme-selector-wrap">
+            <label for="theme-select" class="sr-only">Choose Color Theme</label>
+            <select id="theme-select" class="theme-select" title="Switch terminal color theme" aria-label="Terminal Theme">
+              <option value="matrix">Matrix Green</option>
+              <option value="cyberpunk">Cyber Neon</option>
+              <option value="amber">Amber Phosphor</option>
+              <option value="dracula">Dracula Purple</option>
+            </select>
+          </div>
+          <button id="crt-toggle" class="icon-toggle-btn" title="Toggle CRT scanline effect" aria-label="Toggle CRT Scanline Effect" aria-pressed="false">
+            <span class="crt-badge">CRT</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Terminal Navigation Bar -->
+      <nav class="terminal-nav" aria-label="Quick Navigation">
+        <div class="nav-label">Direct Modules:</div>
+        <div class="nav-buttons">
+          <button type="button" class="nav-btn" id="about" aria-haspopup="dialog" aria-controls="about-content">
+            <span class="prefix">./</span>about
+          </button>
+          <button type="button" class="nav-btn" id="contact" aria-haspopup="dialog" aria-controls="contact-content">
+            <span class="prefix">./</span>contact
+          </button>
+          <button type="button" class="nav-btn" id="cmd-help" title="Display all available commands">
+            <span class="prefix">--</span>help
+          </button>
+          <button type="button" class="nav-btn" id="cmd-clear" title="Clear terminal screen">
+            <span class="prefix">--</span>clear
+          </button>
+        </div>
+      </nav>
+
+      <!-- Terminal Body Content -->
+      <main class="terminal-body" id="terminal-main">
+        <!-- Interactive Terminal Output Area -->
+        <div class="terminal-output" id="terminal-output">
+          
+          <!-- Banner / Greeting -->
+          <div class="terminal-banner">
+            <div class="sys-info">
+              <span class="sys-badge">OS: LasithaOS v2.4</span>
+              <span class="sys-badge">Uptime: 99.98%</span>
+              <span class="sys-badge status-live"><span class="dot"></span> Online</span>
+            </div>
+            
+            <h1 class="main-prompt">
+              <span class="user-host">lasitha</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-symbol">$</span> 
+              <span class="typed-text">whoami --ai-engineer</span>
+              <span class="cursor" aria-hidden="true">█</span>
+            </h1>
+            <p class="tagline">AI Engineer &bull; Generative AI &amp; Agentic Workflows &bull; Full-Stack Software Engineer</p>
+          </div>
+
+          <!-- Section: Links & Presence -->
+          <section class="links-section" aria-labelledby="socials-heading">
+            <h2 id="socials-heading" class="section-title">
+              <span class="prompt-prefix">&gt;</span> Find me online:
+            </h2>
+            
+            <ul class="links-grid" role="list">
+              <li class="link-item">
+                <a href="https://github.com/lasithadilshan" target="_blank" rel="noopener noreferrer" class="link-card" id="link-github">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">GitHub</span>
+                    <span class="link-desc">Code &amp; Repositories</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+
+              <li class="link-item">
+                <a href="https://lasithadilshan.github.io/lasitha-thilakarathna" target="_blank" rel="noopener noreferrer" class="link-card" id="link-portfolio">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">My Portfolio</span>
+                    <span class="link-desc">Projects &amp; Showcase</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+
+              <li class="link-item">
+                <a href="https://www.linkedin.com/in/lasitha-thilakarathna-3027ab120/" target="_blank" rel="noopener noreferrer" class="link-card" id="link-linkedin">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">LinkedIn</span>
+                    <span class="link-desc">Professional Network</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+
+              <li class="link-item">
+                <a href="https://www.youtube.com/c/dilshantilakaratne" target="_blank" rel="noopener noreferrer" class="link-card" id="link-youtube">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">YouTube</span>
+                    <span class="link-desc">Tech &amp; Tutorials</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+
+              <li class="link-item">
+                <a href="https://twitter.com/dilshantilakar1" target="_blank" rel="noopener noreferrer" class="link-card" id="link-twitter">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">X (Twitter)</span>
+                    <span class="link-desc">@dilshantilakar1</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+
+              <li class="link-item">
+                <a href="https://www.instagram.com/lasitha_dilshan_/" target="_blank" rel="noopener noreferrer" class="link-card" id="link-instagram">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">Instagram</span>
+                    <span class="link-desc">@lasitha_dilshan_</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+
+              <li class="link-item">
+                <a href="https://www.facebook.com/lasithadilshantilakaratne" target="_blank" rel="noopener noreferrer" class="link-card" id="link-facebook">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">Facebook</span>
+                    <span class="link-desc">Social Connect</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+
+              <li class="link-item">
+                <a href="mailto:dilshantilakaratne29@gmail.com" class="link-card" id="link-email">
+                  <span class="link-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </span>
+                  <div class="link-meta">
+                    <span class="link-name">Direct Email</span>
+                    <span class="link-desc">Get in touch</span>
+                  </div>
+                  <span class="link-arrow">&rarr;</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Interactive Command Prompt Area -->
+          <div class="interactive-cli">
+            <div class="cli-hints">
+              <span class="hint-label">Available Commands:</span>
+              <button type="button" class="cli-tag" data-cmd="about">about</button>
+              <button type="button" class="cli-tag" data-cmd="contact">contact</button>
+              <button type="button" class="cli-tag" data-cmd="socials">socials</button>
+              <button type="button" class="cli-tag" data-cmd="skills">skills</button>
+              <button type="button" class="cli-tag" data-cmd="theme cyberpunk">theme</button>
+              <button type="button" class="cli-tag" data-cmd="clear">clear</button>
+              <button type="button" class="cli-tag" data-cmd="help">help</button>
+            </div>
+
+            <form id="terminal-form" class="terminal-input-row" autocomplete="off" spellcheck="false">
+              <label for="cli-input" class="cli-prompt-label">
+                <span class="user-host">guest@terminal</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-symbol">$</span>
+              </label>
+              <input type="text" id="cli-input" class="cli-input" placeholder="Type a command (e.g. 'about', 'contact', 'help')..." aria-label="Terminal command input" />
+              <button type="submit" class="cli-submit-btn" aria-label="Execute command">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- Terminal Status Bar -->
+      <footer class="terminal-statusbar">
+        <div class="status-item">
+          <span class="status-indicator"></span>
+          <span>NORMAL</span>
+        </div>
+        <div class="status-item">UTF-8</div>
+        <div class="status-item" id="status-clock">00:00:00 UTC</div>
+        <div class="status-item hide-on-mobile">WinBox v0.1.8 Active</div>
+        <div class="status-item right">press 'Tab' for autocomplete</div>
+      </footer>
+
+    </div>
   </div>
 
-  <div class="hidden">
-    <div id="about-content">
-      <h2>about-me:$<span class="cursor">|</span></h2>
-      <p>My name is Lasitha Dilshan Thilakarathna and I have been programming for 4 years</p>
-      <p>
-        Some of the languages that I am fluent in include JavaScript, Python,
-        Typescript and Java
+  <!-- Hidden templates for WinBox Popups -->
+  <div class="hidden-templates" aria-hidden="true">
+    
+    <!-- About Modal Content -->
+    <div id="about-content" class="modal-inner">
+      <div class="modal-header-badge">
+        <span class="terminal-dot"></span> AI Engineer &bull; Virtusa &bull; 5 Yrs Exp
+      </div>
+      <h2 class="modal-title">about-me:$<span class="cursor">|</span></h2>
+      
+      <p class="modal-intro">
+        I am <strong class="highlight">Lasitha Dilshan Thilakarathna</strong>, an <strong>AI Engineer &amp; Full-Stack Software Engineer</strong> with <strong>5 years of experience</strong> delivering enterprise web applications, Generative AI solutions, Retrieval-Augmented Generation (RAG) systems, agentic AI workflows, and cloud-integrated software platforms. Currently delivering enterprise GenAI solutions at <strong class="highlight">Virtusa</strong>.
       </p>
+
+      <!-- Award Highlight -->
+      <div class="award-banner">
+        <div class="award-icon">&#127942;</div>
+        <div class="award-details">
+          <span class="award-title">1st Place &bull; Virtusa Agentic AI Hackathon (2025)</span>
+          <span class="award-desc">Led &amp; built Agentic AI travel assistant with multi-agent orchestration and LLMs.</span>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="modal-section">
+        <h3 class="subsection-title">// Professional Experience</h3>
+        <div class="experience-list">
+          <div class="exp-card">
+            <div class="exp-header">
+              <span class="exp-role">Associate Software Engineer</span>
+              <span class="exp-date">2022 &ndash; Present</span>
+            </div>
+            <div class="exp-company">Virtusa &bull; Colombo, Sri Lanka</div>
+            <p class="exp-desc">
+              Develop enterprise full-stack &amp; GenAI applications using Angular, React, Python, FastAPI, LangChain, Hugging Face, vector databases (FAISS, ChromaDB, Pinecone), and AWS/GCP cloud services. Build RAG pipelines, agentic workflows, compliance review systems, and AI dashboards.
+            </p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-header">
+              <span class="exp-role">Intern Engineer</span>
+              <span class="exp-date">2021 &ndash; 2022</span>
+            </div>
+            <div class="exp-company">Surreytech Consulting &bull; Sri Lanka</div>
+            <p class="exp-desc">
+              Supported full-stack healthcare platform development with Angular frontend and Java Spring Boot backend APIs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Categorized -->
+      <div class="modal-section">
+        <h3 class="subsection-title">// Core Technical Competencies</h3>
+        
+        <div class="skills-category-group">
+          <div class="category-heading">&gt; Generative AI &amp; LLM Engineering:</div>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="bullet">&gt;</span> OpenAI &amp; Gemini</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> LangChain</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> RAG &amp; Agentic RAG</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Multi-Agent Workflows</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Hugging Face</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Prompt Engineering</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Semantic Search</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Document Intelligence</span>
+          </div>
+        </div>
+
+        <div class="skills-category-group">
+          <div class="category-heading">&gt; Backend &amp; Architecture:</div>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="bullet">&gt;</span> Python &amp; FastAPI</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Flask &amp; NestJS</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Java Spring Boot</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> REST APIs &amp; Microservices</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Streaming Responses</span>
+          </div>
+        </div>
+
+        <div class="skills-category-group">
+          <div class="category-heading">&gt; Frontend Engineering:</div>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="bullet">&gt;</span> Angular &amp; TypeScript</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> React &amp; JavaScript</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> HTML5, SCSS, CSS3</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Angular Material &amp; MUI</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Responsive Dashboards</span>
+          </div>
+        </div>
+
+        <div class="skills-category-group">
+          <div class="category-heading">&gt; Vector Stores &amp; Databases:</div>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="bullet">&gt;</span> FAISS &amp; ChromaDB</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Pinecone &amp; pgvector</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> PostgreSQL &amp; MySQL</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Firebase &amp; SQLite</span>
+          </div>
+        </div>
+
+        <div class="skills-category-group">
+          <div class="category-heading">&gt; Cloud, DevOps &amp; Mobile:</div>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="bullet">&gt;</span> AWS &amp; GCP</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Docker &amp; CI/CD</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Git, GitHub, GitLab</span>
+            <span class="skill-tag"><span class="bullet">&gt;</span> Android (Java/Firebase)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Certification -->
+      <div class="modal-section">
+        <h3 class="subsection-title">// Education &amp; Credentials</h3>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-degree">MSc in Information Technology</div>
+            <div class="edu-inst">SLIIT, Sri Lanka &bull; 2023 &ndash; Present</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-degree">B.Eng. Software Engineering</div>
+            <div class="edu-inst">IIC University &bull; Second Upper (GPA: 3.56)</div>
+          </div>
+          <div class="edu-card full-width">
+            <div class="edu-degree">Certifications &amp; Publication</div>
+            <div class="edu-inst">
+              &bull; Certified Generative AI Assisted Engineer (Virtusa, 2024)<br />
+              &bull; Career Essentials in Generative AI (Microsoft &amp; LinkedIn)<br />
+              &bull; Publication: <em>Optimizing UX Through Machine Learning</em> (2024)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="https://lasithadilshan.github.io/lasitha-thilakarathna" target="_blank" rel="noopener noreferrer" class="modal-btn primary-btn">
+          View Complete Portfolio &rarr;
+        </a>
+        <a href="https://github.com/lasithadilshan" target="_blank" rel="noopener noreferrer" class="modal-btn secondary-btn">
+          GitHub Profile
+        </a>
+        <a href="https://www.linkedin.com/in/lasithat-3027ab120" target="_blank" rel="noopener noreferrer" class="modal-btn secondary-btn">
+          LinkedIn
+        </a>
+      </div>
     </div>
 
-    <div id="contact-content">
-      <h2>contact-me:$<span class="cursor">|</span></h2>
-      <p>You can contact me at the email and phone number below</p>
-      <ul>
-        <li>Phone: +9477-313-0036</li>
-        <li>Email: dilshantilakaratne29@gmail.com</li>
-      </ul>
+    <!-- Contact Modal Content -->
+    <div id="contact-content" class="modal-inner">
+      <div class="modal-header-badge">
+        <span class="terminal-dot"></span> Direct Channels
+      </div>
+      <h2 class="modal-title">contact-me:$<span class="cursor">|</span></h2>
+      <p class="modal-intro">
+        Interested in collaborating, hiring, or discussing technical projects? Reach out through any of the channels below:
+      </p>
+
+      <div class="contact-card-list">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-type">Direct Phone</span>
+            <a href="tel:+94773130036" class="contact-value" id="phone-val">+94 77 313 0036</a>
+          </div>
+          <button type="button" class="copy-btn" data-copy="+94773130036" title="Copy phone number" aria-label="Copy phone number">Copy</button>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-type">Email Address</span>
+            <a href="mailto:dilshantilakaratne29@gmail.com" class="contact-value" id="email-val">dilshantilakaratne29@gmail.com</a>
+          </div>
+          <button type="button" class="copy-btn" data-copy="dilshantilakaratne29@gmail.com" title="Copy email address" aria-label="Copy email address">Copy</button>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="mailto:dilshantilakaratne29@gmail.com" class="modal-btn primary-btn">
+          Send Email Now &rarr;
+        </a>
+        <a href="https://www.linkedin.com/in/lasitha-thilakarathna-3027ab120/" target="_blank" rel="noopener noreferrer" class="modal-btn secondary-btn">
+          Message on LinkedIn
+        </a>
+      </div>
     </div>
+
   </div>
 
-  <script src="js/winbox.bundle.js"></script>
-  <script src="js/main.js"></script>
+  <div id="copy-toast" class="copy-toast" role="status" aria-live="polite"></div>
 </body>
 
 </html>
