@@ -3,6 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/lasithadilshan/terminal-landing-page.github.io?style=flat-square)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-success?style=flat-square&logo=github)](https://lasithadilshan.github.io/terminal-landing-page.github.io/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+[![GitHub release](https://img.shields.io/github/v/release/lasithadilshan/terminal-landing-page.github.io?style=flat-square&color=blue)](https://github.com/lasithadilshan/terminal-landing-page.github.io/releases)
 [![Built With](https://img.shields.io/badge/Built%20With-Vanilla%20JS%20%7C%20CSS3%20%7C%20WinBox-blue?style=flat-square)](#tech-stack)
 
 An ultra-sleek, interactive terminal-style developer portfolio and landing page built with pure HTML, modern CSS, Vanilla JavaScript, and [WinBox.js](https://github.com/nextapps-de/winbox).
